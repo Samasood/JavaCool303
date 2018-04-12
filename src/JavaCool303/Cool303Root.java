@@ -1,5 +1,6 @@
+package JavaCool303;
 
-public class Cool303Container implements CoolTheme{
+public class Cool303Root implements ThemeComponent{
 
     @Override
     public void setTheme(Cool303Theme theme) {
