@@ -1,6 +1,8 @@
 package JavaCool303;
 
-public class Cool303Button implements ThemeComponent{
+import javax.swing.JButton;
+
+public class Cool303Button extends JButton implements ThemeComponent{
 
     @Override
     public void setTheme(Cool303Theme theme) {

@@ -1,6 +1,8 @@
 package JavaCool303;
 
-public class Cool303Container implements ThemeComponent{
+import javax.swing.JPanel;
+
+public class Cool303Container extends JPanel implements ThemeComponent{
 
     @Override
     public void setTheme(Cool303Theme theme) {
