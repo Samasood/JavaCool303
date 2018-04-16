@@ -1,5 +1,6 @@
 package JavaCool303;
 
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
@@ -19,8 +20,9 @@ public class Cool303Button extends JButton implements ThemeComponent {
     }
 
     public Cool303Button(String label, int x, int y) {
+        this.setOpaque(true);
         this.setText(label);
-        this.setSize(x, y);
+        this.setPreferredSize(new Dimension(x, y));
         this.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 System.out.println(label);

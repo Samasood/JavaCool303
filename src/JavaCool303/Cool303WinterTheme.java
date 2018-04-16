@@ -9,7 +9,7 @@ import javax.swing.border.LineBorder;
 public class Cool303WinterTheme extends Cool303Theme {
 
     public Cool303WinterTheme() {
-        buttonBgColor = new Color(255,255,153);
+        buttonBgColor = Color.CYAN;
         buttonFgColor = new Color(0,0,0);
         buttonTextFont = new Font("Courier New", Font.ITALIC, 20);
         //buttonDimension = new Dimension(10, 5);
