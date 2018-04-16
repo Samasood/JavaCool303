@@ -30,7 +30,8 @@ public class Cool303Button extends JButton implements ThemeComponent {
 
     @Override
     public void setTheme(Cool303Theme theme) {
-        this.setBackground(theme.getButtonColor());
+        this.setBackground(theme.getButtonBgColor());
+        this.setForeground(theme.getButtonFgColor());
         this.setFont(theme.getButtonTextFont());
         this.setBorder(theme.getButtonBorder());
     }

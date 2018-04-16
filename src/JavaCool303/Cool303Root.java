@@ -10,8 +10,7 @@ public class Cool303Root extends JFrame implements ThemeComponent {
     private ArrayList<ThemeComponent> components = new ArrayList<ThemeComponent>();
     Cool303Theme theme;
     
-    public Cool303Root(int width, int height, boolean visible) {
-        this.setPreferredSize(new Dimension(width, height));
+    public Cool303Root(boolean visible) {
         this.setVisible(visible);
     }
 

@@ -3,22 +3,25 @@ package JavaCool303;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
+import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
 
 public class Cool303WinterTheme extends Cool303Theme {
 
     public Cool303WinterTheme() {
-        buttonColor = Color.BLUE;
-        buttonTextFont = new Font("", Font.ITALIC, 6);
+        buttonBgColor = new Color(255,255,153);
+        buttonFgColor = new Color(0,0,0);
+        buttonTextFont = new Font("Courier New", Font.ITALIC, 20);
         //buttonDimension = new Dimension(10, 5);
-        //buttonBorder = new Border()
+        buttonBorder = new LineBorder(Color.BLACK);
 
-        containerColor = Color.GRAY;
-        containerTextFont = new Font("", Font.ITALIC, 8);
+        containerColor = Color.BLUE;
+        containerTextFont = new Font("Courier New", Font.ITALIC, 8);
         //containerDimension = new Dimension(200, 100);
         //buttonBorder = new Border()
 
-        rootColor = Color.CYAN;
-        rootTextFont = new Font("", Font.ITALIC, 10);
+        rootColor = Color.BLACK;
+        rootTextFont = new Font("Courier New", Font.ITALIC, 10);
         //rootDimension = new Dimension(300, 200);
         //buttonBorder = new Border()
     }
