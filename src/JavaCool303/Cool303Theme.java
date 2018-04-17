@@ -16,7 +16,6 @@ public abstract class Cool303Theme {
 
     protected Color rootColor;
     protected Font rootTextFont;
-    protected Border rootBorder;
 
     public Color getButtonBgColor() {
         return this.buttonBgColor;
@@ -54,7 +53,4 @@ public abstract class Cool303Theme {
         return this.rootTextFont;
     }
 
-    public Border getRootBorder() {
-        return this.rootBorder;
-    }
 }

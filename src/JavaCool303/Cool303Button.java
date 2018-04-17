@@ -8,7 +8,7 @@ import javax.swing.JButton;
 
 public class Cool303Button extends JButton implements ThemeComponent {
 
-    private ArrayList<ThemeComponent> components = new ArrayList<ThemeComponent>();
+    private ArrayList<ThemeComponent> components = new ArrayList<>();
 
     public Cool303Button(String label) {
         this.setText(label);

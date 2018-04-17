@@ -4,147 +4,250 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>410</x>
-      <y>270</y>
-      <w>210</w>
+      <x>420</x>
+      <y>280</y>
+      <w>370</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;ApplyTheme&gt;&gt;
+    <panel_attributes>&lt;&lt;ThemeComponent: Interface&gt;&gt;
 Package::JavaCool303
+
 --
--id: int
---
-/+setTheme(Cool303Theme theme)/</panel_attributes>
+/+setTheme(Cool303Theme theme): void/
+/+getSubComponents():ArrayList&lt;ThemeComponent&gt;/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>30</y>
+      <x>20</x>
+      <y>100</y>
       <w>260</w>
-      <h>190</h>
+      <h>100</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Cool303Container&gt;&gt;
 Package::JavaCool303
 --
--id: Long
---
 /+setTheme(Cool303Theme theme)/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>230</y>
-      <w>260</w>
-      <h>190</h>
+      <x>0</x>
+      <y>220</y>
+      <w>370</w>
+      <h>100</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Cool303Button&gt;&gt;
 Package::JavaCool303
-
 --
--id: int
-
---
-
-/+setTheme(Cool303Theme theme)/</panel_attributes>
+/+setTheme(Cool303Theme theme)/
+/+put(ThemeComponent c):void/
+/+getSubComponents():ArrayList&lt;ThemeComponent&gt;/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>30</y>
+      <x>350</x>
+      <y>140</y>
       <w>210</w>
-      <h>190</h>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
-Package::FatClass
-{Some Properties}
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
+    <panel_attributes>&lt;&lt;JButton&gt;&gt;
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>430</y>
-      <w>260</w>
-      <h>190</h>
+      <x>0</x>
+      <y>340</y>
+      <w>370</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>&lt;&lt;Cool303Root&gt;&gt;
 Package::JavaCool303
 --
--id: Long
+theme: Cool303Theme
+-components:ArrayList&lt;ThemeComponent&gt;
 --
-/+setTheme(Cool303Theme theme)/</panel_attributes>
+/+setTheme(Cool303Theme theme)/
+/+put(ThemeComponent c):void/
+/+render(Cool303Theme theme): void/
+/+applyTheme(ThemeComponent c):void/
+/+getSubComponents():ArrayList&lt;ThemeComponent&gt;/</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>680</x>
-      <y>470</y>
+      <x>60</x>
+      <y>30</y>
       <w>210</w>
-      <h>190</h>
+      <h>30</h>
     </coordinates>
-    <panel_attributes>&lt;&lt;Stereotype&gt;&gt;
-Package::FatClass
-{Some Properties}
---
--id: Long
-_-ClassAttribute: Long_
---
-#Operation(i: int): int
-/+AbstractOperation()/
---
-Responsibilities
--- Resp1
-*-- Resp2*</panel_attributes>
+    <panel_attributes>&lt;&lt;JPanel&gt;&gt;
+</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>100</y>
-      <w>150</w>
-      <h>200</h>
+      <x>270</x>
+      <y>170</y>
+      <w>220</w>
+      <h>130</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>130.0;180.0;70.0;180.0;70.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>200.0;110.0;200.0;10.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>340</y>
-      <w>150</w>
+      <x>360</x>
+      <y>390</y>
+      <w>80</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>60.0;10.0;30.0;10.0;30.0;60.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>310</x>
+      <y>140</y>
+      <w>60</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>40.0;10.0;10.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>160</x>
+      <y>50</y>
+      <w>30</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>580</y>
+      <w>210</w>
+      <h>30</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;JFrame&gt;&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>150</x>
+      <y>510</y>
+      <w>30</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>360</x>
+      <y>300</y>
+      <w>80</w>
       <h>30</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+    <additional_attributes>60.0;10.0;40.0;10.0;50.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>800</x>
+      <y>20</y>
+      <w>230</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Cool303Theme: Abstract&gt;&gt;
+Package::JavaCool303
+--
+#buttonBgColor: Color
+#buttonFgColor: Color
+#buttonTextFont: Font
+#buttonBorder: Border 
+#containerColor:Color
+#containerTextFontFont 
+#containerBorderBorder 
+#rootColor:Color
+#rootTextFont:Font
+--
+/+getButtonBgColor(): Color/
+/+getButtonFgColor(): Color/
+/+getButtonTextFont(): Font/
+/+getButtonBorder(): Border/
+/+getContainerColor(): Color/
+/+getContainerTextFont(): Font/
+/+getContainerBorder(): Border/
+/+getRootColor(): Color/
+/+getRootTextFont(): Font/</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>430</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Cool303PastelTheme&gt;&gt;
+Package::JavaCool303
+</panel_attributes>
+    <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>380</y>
-      <w>150</w>
-      <h>200</h>
+      <x>780</x>
+      <y>360</y>
+      <w>80</w>
+      <h>120</h>
     </coordinates>
-    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
-    <additional_attributes>130.0;10.0;70.0;10.0;70.0;180.0;10.0;180.0</additional_attributes>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>60.0;10.0;60.0;100.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>490</y>
+      <w>210</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Cool303WinterTheme&gt;&gt;
+Package::JavaCool303
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>780</x>
+      <y>360</y>
+      <w>110</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>90.0;10.0;90.0;160.0;10.0;160.0</additional_attributes>
   </element>
 </diagram>
