@@ -12,17 +12,12 @@ public class Cool303WinterTheme extends Cool303Theme {
         buttonBgColor = Color.CYAN;
         buttonFgColor = new Color(0,0,0);
         buttonTextFont = new Font("Courier New", Font.ITALIC, 20);
-        //buttonDimension = new Dimension(10, 5);
         buttonBorder = new LineBorder(Color.BLACK);
 
-        containerColor = Color.BLUE;
-        containerTextFont = new Font("Courier New", Font.ITALIC, 8);
-        //containerDimension = new Dimension(200, 100);
-        //buttonBorder = new Border()
+        rootColor = Color.BLUE;
+        rootTextFont = new Font("Courier New", Font.ITALIC, 8);
 
-        rootColor = Color.BLACK;
-        rootTextFont = new Font("Courier New", Font.ITALIC, 10);
-        //rootDimension = new Dimension(300, 200);
-        //buttonBorder = new Border()
+        frameColor = Color.BLACK;
+        frameTextFont = new Font("Courier New", Font.ITALIC, 10);
     }
 }

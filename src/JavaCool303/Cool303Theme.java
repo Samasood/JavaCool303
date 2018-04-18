@@ -10,12 +10,12 @@ public abstract class Cool303Theme {
     protected Font buttonTextFont;
     protected Border buttonBorder;
 
-    protected Color containerColor;
-    protected Font containerTextFont;
-    protected Border containerBorder;
-
     protected Color rootColor;
     protected Font rootTextFont;
+    protected Border rootBorder;
+
+    protected Color frameColor;
+    protected Font frameTextFont;
 
     public Color getButtonBgColor() {
         return this.buttonBgColor;
@@ -34,23 +34,23 @@ public abstract class Cool303Theme {
     }
 
     public Color getContainerColor() {
-        return this.containerColor;
-    }
-
-    public Font getContainerTextFont() {
-        return this.containerTextFont;
-    }
-
-    public Border getContainerBorder() {
-        return this.containerBorder;
-    }
-
-    public Color getRootColor() {
         return this.rootColor;
     }
 
-    public Font getRootTextFont() {
+    public Font getContainerTextFont() {
         return this.rootTextFont;
+    }
+
+    public Border getContainerBorder() {
+        return this.rootBorder;
+    }
+
+    public Color getFrameColor() {
+        return this.frameColor;
+    }
+
+    public Font getFrameTextFont() {
+        return this.frameTextFont;
     }
 
 }
